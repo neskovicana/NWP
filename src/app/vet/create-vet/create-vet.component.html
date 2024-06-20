@@ -1,0 +1,97 @@
+<!-- <h2>Create Vet Form</h2>
+
+<div>{{message}}</div>
+
+<div class="form-group">
+    <form #vetForm="ngForm" (ngSubmit)="createVet(vetForm)">
+        <div class="vet-firstName"> -->
+            <!-- Ovo je kad oba smjera kontrolisem razdvojeno
+                 MORA!!! se dodati name atribut kad se koristi ngModel
+            
+            <input type="text" placeholder="Vet First Name" 
+                   name="vetFirstName"
+                   [ngModel]="vet.firstName"
+                   (ngModelChange)="vet.firstName=$event"> -->
+
+            <!--Banana in a box, binding u oba smjera-->
+
+            <!-- <input type="text" placeholder="Vet First Name" name="vetFirstName" required #vetFirstName="ngModel"
+                [(ngModel)]="vet.firstName">
+        </div>
+
+        <div *ngIf="vetFirstName.errors?.['required']">Vet First Name is Mandatory</div>
+
+        <div class="vet-lastName">
+            <input type="text" placeholder="Vet Last Name" name="vetLastName" required #vetLastName="ngModel"
+                [(ngModel)]="vet.lastName">
+        </div>
+
+        <div *ngIf="vetLastName.errors?.['required']">Vet Last Name is Mandatory</div>
+
+        <div class="vet-phoneNumber">
+            <input type="text" placeholder="Vet Phone Number" name="vetPhoneNumber" required minlength="6"
+                #vetPhoneNumber="ngModel" [(ngModel)]="vet.phoneNumber">
+        </div>
+
+        <div *ngIf="vetPhoneNumber.errors?.['required']">Vet Phone Number is Mandatory</div>
+
+        <div class="vet-specialization">
+            <input type="text" placeholder="Vet Secialization" name="vetSpecialization" required
+                #vetSpecialization="ngModel" [(ngModel)]="vet.specialization">
+        </div>
+
+        <div *ngIf="vetSpecialization.errors?.['required']">Vet Specialization is Mandatory</div>
+
+        <div class="vet-confirm">
+            <input type="checkbox" name="vetConfirm" required [(ngModel)]="confirmed">
+            I confirm that the information provided above is accurate!
+        </div>
+        <button type="submit" [disabled]="!vetForm.form.valid || !confirmed">Create</button>
+    </form>
+</div>
+
+<h4>Vet is {{vet | json}}</h4>
+<h4>Form status: {{ vetForm.form.status }}</h4>
+<h4>Data has been confirmed: {{confirmed}}</h4> -->
+
+
+<div class="card">
+    <div class="card-body">
+        <small *ngIf="message">{{message}}</small>
+        <form class="custom-form" #vetForm="ngForm" (ngSubmit)="createVet(vetForm)">
+            <h3>Add New Veterinarian</h3>
+            <div class="form-group">
+                <label for="exampleInputFirstName">First Name</label>
+                <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Enter First Name"
+                    name="vetFirstName" required #vetFirstName="ngModel" [(ngModel)]="vet.firstName" style="width: 100%;">
+                <small *ngIf="vetFirstName.errors?.['required']">Vet First Name is Mandatory</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputLastName">Last Name</label>
+                <input type="text" class="form-control" id="exampleInputLastName" placeholder="Enter Last Name"
+                    name="vetLastName" required #vetLastName="ngModel" [(ngModel)]="vet.lastName" style="width: 100%;">
+                <small *ngIf="vetLastName.errors?.['required']">Vet Last Name is Mandatory</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPhoneNumber">Phone Number</label>
+                <input type="text" class="form-control" id="exampleInputPhoneNumber" placeholder="Enter Phone Number"
+                    name="vetPhoneNumber" required #vetPhoneNumber="ngModel" [(ngModel)]="vet.phoneNumber" style="width: 100%;">
+                <small *ngIf="vetPhoneNumber.errors?.['required']">Vet Phone Number is Mandatory</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputSpecialization">Specialization</label>
+                <input type="text" class="form-control" id="exampleInputSpecialization"
+                    placeholder="Enter Secialization" name="vetSpecialization" required #vetSpecialization="ngModel"
+                    [(ngModel)]="vet.specialization" style="width: 100%;">
+                <small *ngIf="vetSpecialization.errors?.['required']">Vet Specializationis Mandatory</small>
+            </div>
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControlInline" name="vetConfirm" required
+                    [(ngModel)]="confirmed">
+                <label class="custom-control-label" for="customControlInline">I confirm that the information provided
+                    above is accurate.</label>
+            </div>
+            <button type="submit" class="btn custom-btn" [disabled]="!vetForm.form.valid || !confirmed">Create</button>
+        </form>
+    </div>
+</div>

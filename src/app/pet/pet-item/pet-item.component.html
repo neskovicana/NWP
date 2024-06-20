@@ -1,0 +1,7 @@
+<div class="pet-container">
+    <div class="name">
+        <h3>{{pet.name}} - species {{pet.species}}</h3>
+    </div>
+    <div class="birthdate" [class]="pet.isOld() ? 'old' : 'not-old'">{{formatDate(pet.birthdate)}}</div>
+    <button (click)="toggleFavorite($event)" [disabled]="pet.favorite">Add to Favorite</button>
+</div>

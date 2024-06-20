@@ -1,0 +1,28 @@
+<!-- <app-vet-item *ngFor="let vet of vets" [vet]="vet"
+              (toggleFavorite)="onToggleFavorite($event)">
+</app-vet-item> -->
+<div class="custom-container">
+    <div class="row custom-row" style="padding-bottom: 70px;">
+        <app-vet-item  class="col-sm-6 col-lg-3 custom-col" *ngFor="let vet of vets" [vet]="vet">
+        </app-vet-item>
+    </div>
+</div>
+<!-- 
+OVO SU NEKE OPERACIJE KOJE SU BILE CISTO POKAZNE, NE TREBAJU MI INACE
+<div>
+    <button type="button" (click)="fetchVets()">
+        Refetch Vets
+    </button>
+    <button type="button" (click)="makeFailingCall()">
+        Make Failing Call
+    </button>
+    <button type="button" (click)="setAuthToken()">
+        Set Auth Token
+    </button>
+    <button type="button" (click)="resetAuthToken()">
+        Reset Auth Token
+    </button>
+</div> -->
+
+<!-- <app-vet-item *ngFor="let vet of vets | async" [vet]="vet">
+</app-vet-item> -->

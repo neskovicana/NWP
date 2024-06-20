@@ -1,0 +1,35 @@
+.custom-btn {
+    background-color: #A1C398; /* Green background */
+    color: white; /* White text color */
+}
+
+.custom-btn:hover {
+    background-color: #FA7070; /* Darker green on hover */
+}
+
+.custom-form .form-group {
+    margin-bottom: 1rem; /* Adjust margin between form groups */
+}
+
+.custom-form .form-control {
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .custom-form .form-control {
+        width: calc(100% - 60%); /* Reduce input width for larger screens */
+    }
+}
+
+h3 {
+    color:#3d4a39;
+}
+
+.card {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

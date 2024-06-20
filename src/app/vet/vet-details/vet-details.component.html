@@ -1,0 +1,13 @@
+<div *ngIf="vet" class="card" style="width: 18rem;">
+    <img src="assets/veterinarian.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 [class]="vet.onDuty ? 'onDuty' : 'notOnDuty'">{{vet.firstName + ' ' + vet.lastName}}</h5>
+        <p class="card-text">This is one of our great experts.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Phone number - {{vet.phoneNumber}}</li>
+        <li class="list-group-item">Specialization - {{vet.specialization}}</li>
+        <li *ngIf="vet.onDuty" class="list-group-item">This Veterinarian is on Duty</li>
+        <li *ngIf="!vet.onDuty" class="list-group-item">This Veterinarian is not on Duty</li>
+    </ul>
+</div>

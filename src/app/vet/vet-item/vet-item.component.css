@@ -1,0 +1,29 @@
+.serbian {
+    color: greenyellow;
+}
+
+.non-serbian {
+    color: pink;
+}
+
+.with-plus {
+    font-size: 1.2em;
+}
+
+.without-plus {
+    font-size: 0.8em;
+}
+
+.custom-btn {
+    background-color: #A1C398;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #FA7070;
+}
+
+.card {
+    flex: 1 0 auto;
+    margin: 5px;
+}

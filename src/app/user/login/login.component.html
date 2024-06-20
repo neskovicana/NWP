@@ -1,0 +1,23 @@
+<div class="component">
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            <form class="custom-form" (ngSubmit)="login()">
+                <h3 class="card-title">Login</h3>
+                <small *ngIf="message">{{message}}</small>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Enter username"
+                        name="username" required #username="ngModel" [(ngModel)]="user.username" style="width: 100%;">
+                    <small *ngIf="username.errors?.['required']">This field is required.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password"
+                        name="password" required #password="ngModel" [(ngModel)]="user.password" style="width: 100%;">
+                    <small *ngIf="password.errors?.['required']">This field is required.</small>
+                </div>
+                <button type="submit" class="btn custom-btn">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

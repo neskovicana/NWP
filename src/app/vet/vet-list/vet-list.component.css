@@ -1,0 +1,22 @@
+.custom-container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+  }
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.9rem;
+    margin-left: -0.75rem;  /* Adjust this value to align items properly */
+    margin-right: -0.75rem;
+}
+
+.custom-col {
+    /* display: flex; */
+    margin-bottom: 15px; /* Optional: to add space between rows when the screen size changes */
+    /* padding: 0.8rem; */
+    padding-left: 0.75rem;  /* Adjust this value to match the row margin */
+    padding-right: 0.75rem; 
+}

@@ -1,0 +1,22 @@
+.footer {
+    /* background-color: #a8b1a6c2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1c8; /* Example background color */
+    text-align: center;
+    z-index: 1000; /* Ensure it is above other content */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+.footer__text {
+    font-size: 0.7rem;
+    margin-top: 0.9rem;
+}
