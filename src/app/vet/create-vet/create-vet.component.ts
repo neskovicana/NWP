@@ -15,7 +15,6 @@ export class CreateVetComponent {
 
   public vet: Vet = {
     onDuty: false,
-//    favorite: false,
     firstName: '',
     lastName: '',
     phoneNumber: '',
@@ -32,7 +31,6 @@ export class CreateVetComponent {
   initializeVet() {
     this.vet = {
       onDuty: false,
-//    favorite: false,
       firstName: '',
       lastName: '',
       phoneNumber: '',
@@ -58,7 +56,6 @@ export class CreateVetComponent {
           this.message = result.msg;
           this.vet = {
             onDuty: false,
-//          favorite: false,
             firstName: '',
             lastName: '',
             phoneNumber: '',
@@ -70,7 +67,7 @@ export class CreateVetComponent {
         }
       });
     } else {
-      this.message = 'Stock form is in an invalid state';
+      this.message = 'Vet form is in an invalid state';
       console.error('Vet form is in an invalid state');
     }
   }

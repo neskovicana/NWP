@@ -1,7 +1,7 @@
 <div *ngIf="vet" class="card" style="width: 18rem;">
     <img src="assets/veterinarian.png" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 [class]="vet.onDuty ? 'onDuty' : 'notOnDuty'">{{vet.firstName + ' ' + vet.lastName}}</h5>
+        <h5 [ngClass]="vet.onDuty ? 'onDuty' : 'notOnDuty'">{{vet.firstName + ' ' + vet.lastName}}</h5>
         <p class="card-text">This is one of our great experts.</p>
     </div>
     <ul class="list-group list-group-flush">

@@ -83,7 +83,7 @@
                 <input type="text" class="form-control" id="exampleInputSpecialization"
                     placeholder="Enter Secialization" name="vetSpecialization" required #vetSpecialization="ngModel"
                     [(ngModel)]="vet.specialization" style="width: 100%;">
-                <small *ngIf="vetSpecialization.errors?.['required']">Vet Specializationis Mandatory</small>
+                <small *ngIf="vetSpecialization.errors?.['required']">Vet Specialization is Mandatory</small>
             </div>
             <div class="custom-control custom-checkbox my-1 mr-sm-2">
                 <input type="checkbox" class="custom-control-input" id="customControlInline" name="vetConfirm" required
