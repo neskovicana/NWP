@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { VetItemComponent } from './vet/vet-item/vet-item.component';
-import { PetItemComponent } from './pet/pet-item/pet-item.component';
 import { CreateVetComponent } from './vet/create-vet/create-vet.component';
 import { VetListComponent } from './vet/vet-list/vet-list.component';
 import { VetService } from './services/vet.service';
@@ -26,7 +25,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
   declarations: [
     AppComponent,
     VetItemComponent,
-    PetItemComponent,
     CreateVetComponent,
     VetListComponent,
     LoginComponent,

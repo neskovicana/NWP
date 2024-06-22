@@ -1,8 +1,10 @@
 <div *ngIf="vet" class="card" style="width: 18rem;">
     <img src="assets/veterinarian.png" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 [ngClass]="vet.onDuty ? 'onDuty' : 'notOnDuty'">{{vet.firstName + ' ' + vet.lastName}}</h5>
-        <p class="card-text">This is one of our great experts.</p>
+        <h5 *ngIf="vet.onDuty"><img class="dot" src="assets/icons8-green-dot-48.png">&#160;{{vet.firstName + ' ' +
+            vet.lastName}}</h5>
+        <h5 *ngIf="!vet.onDuty"><img class="dot" src="assets/icons8-red-dot-48.png">&#160;{{vet.firstName + ' ' +
+            vet.lastName}}</h5>
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">Phone number - {{vet.phoneNumber}}</li>

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Vet } from '../../model/vet';
 import { VetService } from '../../services/vet.service';
 import { Observable } from 'rxjs';
 import { AuthService } from '../../services/auth.service';
+import { Vet } from '../../model/vet';
 
 @Component({
   selector: 'app-vet-list',
