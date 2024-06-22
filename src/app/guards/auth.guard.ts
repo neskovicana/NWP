@@ -13,8 +13,4 @@ export const authGuard: CanActivateFn = () => {
   console.log('AuthGuard#canActivate not authorized to access page');
   // Redirect to the login page
   return router.parseUrl('/login');
-  
-  // or
-  // router.navigate(['/login']);
-  // return false;
 };

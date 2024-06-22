@@ -26,24 +26,4 @@ export class VetListComponent {
       });
   }
 
-  // setAuthToken() {
-  //   this.authService.authToken = 'TESTING';
-  // }
-
-  // resetAuthToken() {
-  //   this.authService.authToken = undefined;
-  // }
-
-  // makeFailingCall() {
-  //   this.vetService.makeFailingCall().subscribe({
-  //     next: (res) => console.log('Successfully made failing call', res),
-  //     error: (err) => console.error('Error making failing call', err)
-  //   });
-  // }
-
-  // onToggleFavorite(vet: Vet) {
-  //   console.log('Favorite for vet ', vet, ' was triggered.');
-  //   this.vetService.toggleFavorite(vet);
-  // }
-
 }

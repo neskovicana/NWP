@@ -9,9 +9,7 @@ import { Vet } from '../model/vet';
 })
 export class VetService {
 
-  constructor(private http: HttpClient) { 
-    
-  }
+  constructor(private http: HttpClient) { }
 
   getVets(): Observable<Vet[]> {
     return this.http.get<Vet[]>('api/vets');
@@ -28,18 +26,6 @@ export class VetService {
   createVet(vet: Vet): Observable<any> {
     return this.http.post('/api/vets', vet);
   }
-
-  // toggleFavorite(vet: Vet): Observable<Vet> {
-  //   return this.http.patch<Vet>('/api/vets', 
-  //     {
-  //       favorite: !vet.favorite
-  //     }
-  //   );
-  //   // let foundVet = this.vets.find(each => each.phoneNumber === vet.phoneNumber);
-  //   // if (foundVet) {
-  //   //   foundVet.favorite = !foundVet.favorite;
-  //   // }
-  // }
 
   toggleOnDuty(vet: Vet): Observable<Vet> {
     return this.http.put<Vet>('/api/vets/toggleOnDuty', {

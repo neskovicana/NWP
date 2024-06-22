@@ -10,8 +10,8 @@ import { Vet } from '../../model/vet';
 export class VetItemComponent implements OnInit {
 
   @Input() public vet: Vet | undefined;
-  
-  constructor(private vetService: VetService) {}
+
+  constructor(private vetService: VetService) { }
 
   onToggleOnDuty(event: any) {
     if (this.vet) {
@@ -32,6 +32,5 @@ export class VetItemComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  
 
 }

@@ -49,7 +49,6 @@ export class CreateVetComponent {
   createVet(vetForm: NgForm) {
     console.log('Creating vet ', this.vet);
     if (vetForm.valid) {
-      // linija ispod je kljucna
       this.vetService.createVet(this.vet)
       .subscribe({
         next: (result: any) => {

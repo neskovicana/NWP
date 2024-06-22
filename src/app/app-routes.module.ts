@@ -11,7 +11,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/home-page', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'vets/list', component: VetListComponent, canActivate: [authGuard] },

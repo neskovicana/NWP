@@ -1,14 +1,14 @@
 .custom-btn {
-    background-color: #A1C398; /* Green background */
-    color: white; /* White text color */
+    background-color: #A1C398;
+    color: white;
 }
 
 .custom-btn:hover {
-    background-color: #FA7070; /* Darker green on hover */
+    background-color: #FA7070;
 }
 
 .custom-form .form-group {
-    margin-bottom: 1rem; /* Adjust margin between form groups */
+    margin-bottom: 1rem;
 }
 
 .custom-form .form-control {
@@ -17,7 +17,7 @@
 
 @media (min-width: 1000px) {
     .custom-form .form-control {
-        width: calc(100% - 60%); /* Reduce input width for larger screens */
+        width: calc(100% - 60%);
     }
 }
 

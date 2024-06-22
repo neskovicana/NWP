@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VetItemComponent } from './vet/vet-item/vet-item.component';
 import { PetItemComponent } from './pet/pet-item/pet-item.component';
@@ -39,7 +38,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     AppRoutesModule

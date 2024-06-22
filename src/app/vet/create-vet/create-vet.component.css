@@ -31,7 +31,7 @@
 
 @media (min-width: 1000px) {
   .custom-form .form-control {
-      width: calc(100% - 60%); /* Reduce input width for larger screens */
+      width: calc(100% - 60%);
   }
 }
 
