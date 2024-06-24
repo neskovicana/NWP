@@ -38,14 +38,6 @@ export class CreateVetComponent {
     }
   }
 
-  // ovaj metod je trebao za two way binding prije koriscenja ngModel
-  updateFirstName(event: Event): void {
-    const inputElement = event.target as HTMLInputElement;
-    if (inputElement) {
-      this.vet.firstName = inputElement.value;
-    }
-  }
-
   createVet(vetForm: NgForm) {
     console.log('Creating vet ', this.vet);
     if (vetForm.valid) {
